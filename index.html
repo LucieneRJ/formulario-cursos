@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+   <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+  <div>
+    <h1 id="titulo">Cadastro de DEVs</h1>
+    <p id="subtitulo">Complete suas informações</p>
+    <br>
+  </div>
+
+    <!-- Início do formulário -->
+  <form action="#" method="post">
+    <fieldset class="grupo"> <!--agrupador de campos-->
+
+       <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+      <div class="campo">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" required> <!--com required só conseguirá enviar formulário quando o campo for preenchido-->
+      </div>
+
+      <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+      <div class="campo">
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" name="sobrenome" id="sobrenome" requiredrequired>
+      </div>
+    </fieldset>
+
+      <!-- Campo de email com-->
+    <div class="campo">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required>
+    </div>
+
+ <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+    <div class="campo">
+      <label for="question1">Qual aplicação você desenvolve?</label>
+      <label for="frontEnd">
+        <input type="radio" name="devweb" value="frontEnd" checked>Front-end
+      </label>
+
+      <label for="backend">
+        <input type="radio" name="devweb" value="backend">Back-end
+      </label>
+
+      <label for="fullstack">
+        <input type="radio" name="devweb" value="fullstack">Fullstack
+      </label>
+    </div>
+
+    <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+    <div>
+      <label for="select">Senioridade</label>
+      <select name="select" id="select">
+        <option selected disable value="">Selecione</option> <!--value ficará vazio-->
+        <option value="junior">Junior</option>
+        <option value="pleno">Pleno</option>
+        <option value="senior">Senior</option>
+      </select>
+    </div>
+
+    <fieldset class="grupo">
+      <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+      <div id="check">
+        <label for="question2">Selecione as tecnologias que utiliza:</label><br><br>
+
+        <input type="checkbox" id="tecnol1" name="tecnol1" value="html">
+        <label for="tecnol1">HTML</label>
+        <input type="checkbox" id="tecnol2" name="tecnol2" value="css">
+        <label for="tecnol2">CSS</label>
+        <input type="checkbox" id="tecnol3" name="tecnol3" value="javascript">
+        <label for="tecnol3">Javascript</label>
+        <input type="checkbox" id="tecnol4" name="tecnol4" value="php">
+        <label for="tecnol4">PHP</label>
+        <input type="checkbox" id="tecnol5" name="tecnol5" value="c#">
+        <label for="tecnol5">C#</label>
+        <input type="checkbox" id="tecnol6" name="tecnol6" value="python">
+        <label for="tecnol6">Python</label>
+        <input type="checkbox" id="tecnol7" name="tecnol7" value="java">
+        <label for="tecnol7">Java</label>    
+      </div>
+    </fieldset>
+
+     <!-- Caixa de texto --> <!-- Caixa de texto -->
+    <div class="campo">
+      <br>
+      <label for="experience">Conte um pouco da sua esperiência</label>
+      <textarea row="8" style="width: 26em;" id="experience" name="experience"></textarea>
+    </div>
+
+     <!-- Botão para enviar o formulário -->
+    <button class="botao" type="submit">Concluído</button>
+
+  </form>
+
+</body>
+</html>
